@@ -26,4 +26,4 @@ install:
 	docker-compose run --rm web bundle install
 
 test:
-	docker-compose run --rm web rails test
+	docker-compose run web rails test
