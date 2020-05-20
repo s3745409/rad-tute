@@ -1,5 +1,5 @@
-g:
-	docker-compose run --rm web rails generate
+db-all:
+	docker-compose run --rm web rails db:create && docker-compose run web rails db:migrate && docker-compose run web rails db:seed
 
 build:
 	docker-compose build
