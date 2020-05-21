@@ -67,8 +67,8 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'rad-tute-app.herokuapp.com'
-  config.action_mailer.default_url_options = { host: host }
+
+  config.action_mailer.default_url_options = { host: 'rad-tute-app.herokuapp.com' }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
